@@ -26,7 +26,7 @@ kind: Pod
 metadata:
   labels:
     run: web
-    name: web
+  name: web
 spec:
   containers:
   - image: redis
