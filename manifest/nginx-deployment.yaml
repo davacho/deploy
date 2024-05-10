@@ -19,17 +19,3 @@ spec:
         image: nginx:1.25.5
         ports:
         - containerPort: 80
-       
----
-apiVersion: v1
-kind: Pod
-metadata:
-  labels:
-    run: web
-  name: web
-spec:
-  containers:
-  - image: redis
-    imagePullPolicy: Always
-    name: web
-    resources: {}
